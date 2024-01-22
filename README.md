@@ -1,5 +1,10 @@
 # Discription
 #### Instructor Database
+1. Java-based GUI
+   - The Java program is a GUI application using JavaFX for a University Information System. It allows users to retrieve and insert instructor information. The main features include querying instructors by ID, inserting new instructors, and handling errors with a clear layout. The code reads and writes data from/to text files, dynamically adapts to varying file sizes, and ensures a user-friendly interface.
+
+2. Python-based GUI
+   - The code defines a GUI application in Python using Tkinter for a University Information System. It features options to retrieve instructor or department information, clear the interface, or quit the program. The program reads data from text files, dynamically updates the GUI based on user input, and handles errors with appropriate messages.
 
 #### Petco Database
 - A relational database named "petco" with tables for EMPLOYEE, PETS, PRODUCTS, DEPARTMENT, and CUSTOMERS. It defines columns for employee, pet, product, department, and customer information, establishing relationships between tables using primary and foreign keys.
