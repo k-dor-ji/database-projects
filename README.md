@@ -1,2 +1,33 @@
 # Discription
-- The program is designed to create a GUI for a University Information System with four radio buttons. It reads two text files containing information about instructors and departments. Depending on the selected radio button, it allows users to retrieve and display details about instructors or departments. The GUI includes features for submitting, clearing, and quitting. The displayed information is formatted and left-aligned. If the entered ID or department name is not found, appropriate messages are shown in the specified format. The program handles any number of lines in the input files and maintains a consistent layout throughout.
+#### Instructor Database
+
+#### Petco Database
+- A relational database named "petco" with tables for EMPLOYEE, PETS, PRODUCTS, DEPARTMENT, and CUSTOMERS. It defines columns for employee, pet, product, department, and customer information, establishing relationships between tables using primary and foreign keys.
+
+##### Employee
+`Employee → Assists → Customers`
+`Employee → Manages → Pets`
+`Employee → Manages → Products`
+
+The primary key for an employee class is the employee_id. That is because the employee_id is usually unique for each employee within the company. Thus, it makes the perfect primary key to retrieve unique tuples without returning duplicates from the table. The employee class is related to the customers class since employees are expected to assist customers with their questions. The employee class is also related to the pets class since the pet store requires employees to manage and service the pets according to the customer’s needs. Finally, the employee is related to the products class since employees are expected to take care of and sell their company products to potential customers.
+
+
+
+##### Pets
+Similar to the employee class, the primary key for the pets class is the pet_id. The pet_id is an id given by the employees to uniquely identify different pets and their orders. Therefore, it is a unique key which can display tuples which are not duplicated. The pet class also contains 2 foreign keys, the employee_id and the order_id. The employee_id acts to identify the specific employee assigned to complete the order, also known as the order_id.
+
+##### Products
+`Products → Managed → Employee`
+
+The product class includes multiple keys within it. The keys aim to identify the product information closely, such as price, expiration date, and id number. Since the idnumber is a unique key that identifies a tuple from the products table without duplicate values, it is most appropriate to be assigned as the primary key for the table. This table does not have a foreign key but it does have a few relational connections with the employee table.
+
+##### Department
+`Departments → Assign → Employee`
+
+The department class has few and straightforward keys. These include the department name and the department id, known as dept_id. Since the dept_id is uniquely assigned for each department, it is also the most suitable as the primary key for the table. The department class has one important relation with the employee class.
+
+##### Customers
+`Customers → Own → Pets`
+`Customers → Buy → Products`
+
+The customer class has the primary key customer_id since it is a unique key which returns non-duplicate tuples. The customers table includes the foreign key pet_id since customers own their pets and the orders that are associated with the pets are a part of the customers final order from the company and the employee. The customer has a relational connection with both the pets and products table.
