@@ -1,4 +1,8 @@
 # Description
+<img src="https://github.com/user-attachments/assets/f5611db3-fd8b-416c-8b93-47a45b1fad8b" alt="Screenshot 1" width="400" height="400">
+<img src="https://github.com/user-attachments/assets/23644d7e-850d-48c2-b726-31cdce2699e4" alt="Screenshot 2" width="400" height="400">
+
+
 #### Petco: SQL database 
 - A relational database named "petco" with tables for EMPLOYEE, PETS, PRODUCTS, DEPARTMENT, and CUSTOMERS. It defines columns for employee, pet, product, department, and customer information, establishing relationships between tables using primary and foreign keys.
 
